@@ -1,10 +1,18 @@
-import { Button } from 'antd';
 import './App.less';
+import LoginPane from "./pages/login";
+import AdminPane from "./pages/admin";
+
+import {HashRouter as Router,Route,Routes} from "react-router-dom"
 
 function App() {
   return (
     <div className="App">
-     撩学堂后台管理系统根组件<Button type="primary">测试</Button>
+        <Router>
+            <Routes>
+                <Route path={"/*"} element={<AdminPane/>}/>
+                <Route path={"/login"} element={<LoginPane/>}/>
+            </Routes>
+        </Router>
     </div>
   );
 }
