@@ -1,5 +1,5 @@
 import React,{Component} from "react"
-import {getCategoryCourseCount, getUserWeekCount} from "../../../../../../api/statisticsApi";
+import {getUserWeekCount} from "../../../../../../api/statisticsApi";
 import {Card} from "antd";
 import ReactECharts from "echarts-for-react";
 import {getFormalDate} from "../../../../../../tools/dateTool";

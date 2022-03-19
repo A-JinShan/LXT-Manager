@@ -62,7 +62,7 @@ class ArticleEdit extends Component{
                 label="文章ID"
                 name="id"
                 rules={[{ required: true, message: '必须输入文章ID' }]}
-                style={{display:"none"}}
+                hidden={true}
             >
                 <Input />
             </Form.Item>

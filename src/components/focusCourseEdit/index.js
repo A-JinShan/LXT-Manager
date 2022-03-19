@@ -62,7 +62,7 @@ class FocusCourseEdit extends Component{
                     <Form.Item
                         name="id"
                         label="ID"
-                        style={{display:"none"}}
+                        hidden={true}
                         rules={[
                             {
                                 required: true,

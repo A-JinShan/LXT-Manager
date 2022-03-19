@@ -52,7 +52,7 @@ class TeacherEdit extends Component{
                     <Form.Item
                         name="id"
                         label="ID"
-                        style={{display:"none"}}
+                        hidden={true}
                     >
                         <Input />
                     </Form.Item>
